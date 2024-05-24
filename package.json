@@ -4,7 +4,7 @@
   "main": "Hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node wxApp.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "body": "^5.1.0",
     "body-parser": "^1.20.2",
+    "date-and-time": "^3.3.0",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "parser": "^0.1.4"
