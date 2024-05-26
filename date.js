@@ -1,9 +1,12 @@
-const date = require("date-and-time");
+function dateTime() {
+  let now = new Date();
+  let date = ("0" + now.getDate()).slice(-2);
+  let month = ("0" + (now.getMonth() + 1)).slice(-2);
+  let year = now.getFullYear();
+  let hours = now.getHours();
+  let seconds = now.getSeconds();
 
-const now = new Date();
+  var output = year + "-" + month + "-" + date + " " + hours + ":" + seconds;
 
-const formattedDate = date.format(now, "D/M/YYYY");
-
-const value = date.transform(formattedDate, "DD/MM/YYYY", "MM/DD/YYYY");
-
-console.log("transformed date and time :- " + value);
+  return output;
+}
